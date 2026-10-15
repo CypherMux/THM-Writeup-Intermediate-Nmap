@@ -1,6 +1,8 @@
 # THM-Writeup-Intermediate-Nmap
 
-Hello everybody this will be a walkthrough through the room "Intermediate Nmap" by cnmatic. This is my first write up so any feedback would be amazing. Thank you :)
+Hello everybody this will be a walkthrough through the room "Intermediate Nmap" by cnmatic. This is my first write up so any feedback would be amazing. Thank you :) 
+
+Link to the room: https://tryhackme.com/room/intermediatenmap
 
 STEP ONE
 --------
