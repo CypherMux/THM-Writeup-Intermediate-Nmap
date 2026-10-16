@@ -13,7 +13,7 @@ Now that we have the IP of the target machine, let's put some of our Nmap skills
 
 Let us start by inputting the following Nmap command as I do:
 
-"nmap MACHINE_IP"
+``` nmap MACHINE_IP ```
 
 Replace the "MACHINE_IP" section with your own target machine IP as it states in the "IP address" section in your browser.
 (it should be on the top right of your browser tab.)
@@ -30,7 +30,7 @@ STEP TWO
 
 For this next step we will use the port 31337 which is open to our advantage. In your browser, input the following URL:
 
-"http://MACHINE_IP:31337"
+``` http://MACHINE_IP:31337 ```
 
 Again replace "MACHINE_IP" with your own target machine IP. Ignore the warning about entering the site and continue anyways and you should see this on your screen:
 
@@ -45,7 +45,7 @@ STEP THREE
 
 Now let's use that username and password we discovered to obtain access to the target machine's SSH server. Type the following command in your terminal:
 
-"ssh USERNAME@MACHINE_IP"
+``` ssh USERNAME@MACHINE_IP ```
 
 Again, replace the "MACHINE_IP" section with your target machine IP and replace the "USERNAME" section with the username we found in the last step. After you input the command type yes to continue connecting and then input the password we found as well into the password section as shown in your terminal.
 
@@ -60,13 +60,13 @@ After you input the username and password into the SSH server, you should see so
 We've officially made it into the SSH server using our Nmap skills!!
 This is the final stretch, now we just need to find the flag somewhere within this machines directory. Let's start by seeing if there is any files pertaining to the flag in the directory we are currently in, input the following command into the SSH server.
 
-"ls -a"
+``` ls -a ```
 
-We input the "-a" flag just in case the flag is a hidden file within this directory, as we can see there is no files which are of importance to us within the directory we started in.
+We input the ```-a``` flag just in case the flag is a hidden file within this directory, as we can see there is no files which are of importance to us within the directory we started in.
 
 <img width="902" height="263" alt="image" src="https://github.com/user-attachments/assets/6617b4bb-5931-4f3f-94c0-089954e3d6ab" />
 
-Since that didn't work, let's try to go back a directory using the "cd .." command. After you input the following command list the directories again using the "ls" command. Now the "user" directory seems very promising to our search for the flag. Let's direct ourselves into this directory using the "cd user" command and then list the current files in the directory using the "ls" command.
+Since that didn't work, let's try to go back a directory using the ```cd ..``` command. After you input the following command list the directories again using the ```ls``` command. Now the "user" directory seems very promising to our search for the flag. Let's direct ourselves into this directory using the ```cd user``` command and then list the current files in the directory using the ```ls``` command.
 
 
 <img width="902" height="135" alt="image" src="https://github.com/user-attachments/assets/0dd48a6b-3f11-4205-9bea-7cc7c6dee335" />
@@ -75,7 +75,7 @@ Since that didn't work, let's try to go back a directory using the "cd .." comma
 
 Now look what we have here we found the flag.txt file! All we have to do now is read the file by using the command:
 
-"cat flag.txt"
+```cat flag.txt```
 
 After you input the command as follows, the flag should be in your terminal!
 
