@@ -37,7 +37,7 @@ Again replace "MACHINE_IP" with your own target machine IP. Ignore the warning a
 
 <img width="861" height="397" alt="11" src="https://github.com/user-attachments/assets/9d315d30-acfa-4d83-ad7c-365b1f4c69be" />
 
-I want to make sure you're not cheating so I put a black bar over the username and the password but the point still stands we found the info we need to obtain access to the SSH server we found earlier in this room!
+Due to the nature of TryHackMe's policy on write-ups I had put a black bar over the username and the password but the point still stands we found the info we need to obtain access to the SSH server we found earlier in this room!
 This will be extremely important for what we will do in the final step.
 
 STEP THREE
@@ -57,7 +57,7 @@ After you input the username and password into the SSH server, you should see so
 
 <img width="896" height="393" alt="image" src="https://github.com/user-attachments/assets/8dc8c4bd-ec48-4a20-a915-03e823fc43ed" />
 
-We've officially made it into the SSH server using our Nmap skills >:) !!
+We've officially made it into the SSH server using our Nmap skills!!
 This is the final stretch, now we just need to find the flag somewhere within this machines directory. Let's start by seeing if there is any files pertaining to the flag in the directory we are currently in, input the following command into the SSH server.
 
 "ls -a"
