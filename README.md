@@ -9,7 +9,7 @@ STEP ONE
 
 Start up your lab machine using the "Start Lab Machine" button and wait for it to boot up.
 
-Now that we have the IP of the target machine, let's put some of our Nmap skills to the test and enumerate it and see if it has any open ports we can exploit later down the line!
+Now that we have the IP of the target machine, let's put some of our Nmap skills to the test and enumerate it to see if it has any open ports we can exploit later down the line!
 
 Let us start by inputting the following Nmap command as I do:
 
